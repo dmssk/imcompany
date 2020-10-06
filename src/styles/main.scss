@@ -6,8 +6,13 @@
 body {
   background: $dark;
   color: $light;
-  font: 24px 'Formular', sans-serif;
+  font: 10px 'Formular', sans-serif;
   overflow-x: hidden;
+}
+
+html,
+main {
+  font-size: 10px;
 }
 
 * {
@@ -24,13 +29,13 @@ a {
     position: fixed;
     top: 50px;
     left: 0;
-    padding-left: 150px;
+    padding-left: 15rem;
     display: flex;
     align-items: center;
     z-index: 2;
 
     .logo {
-      margin-right: 80px;
+      margin-right: 8rem;
     }
   }
 
@@ -40,7 +45,7 @@ a {
   }
 
   &__item {
-    margin-right: 50px;
+    margin-right: 5rem;
 
     a {
       text-transform: uppercase;
@@ -52,27 +57,27 @@ a {
 
 
 h1, .h1 {
-  max-width: 1192px;
-  font-size: 100px;
+  max-width: 119rem;
+  font-size: 10rem;
   font-weight: 900;
   line-height: 1.4;
-  margin-bottom: 56px;
+  margin-bottom: 5.5rem;
 }
 
 h2, .h2 {
   font-weight: 900;
-  font-size: 90px;
-  line-height: 110px;
+  font-size: 9rem;
+  line-height: 11rem;
   color: $light;
-  margin-bottom: 112px;
+  margin-bottom: 11rem;
 }
 
 h3, .h3 {
   font-weight: 900;
-  font-size: 70px;
-  line-height: 86px;
+  font-size: 7rem;
+  line-height: 8.5rem;
   color: $light;
-  margin-bottom: 116px;
+  margin-bottom: 11.5rem;
 }
 
 b {
@@ -81,11 +86,11 @@ b {
 
 .subheading {
   font-weight: 300;
-  font-size: 35px;
-  line-height: 43px;
-  max-width: 635px;
+  font-size: 3.5rem;
+  line-height: 4.3rem;
+  max-width: 63.5rem;
   color: $light;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 mark {
@@ -122,7 +127,7 @@ section {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  padding: 0 0 0 152px;
+  padding: 0 0 0 15rem;
 
 
   display: flex;
@@ -139,8 +144,8 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    left: 61px;
-    width: 45px;
+    left: 6.1rem;
+    width: 4.5rem;
     height: 100%;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 41 1079' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 0V1078.5' stroke='white' stroke-width='2' stroke-dasharray='5 5'/%3E%3Cpath d='M2 871L20.5 890L39 871' stroke='white' stroke-width='4'/%3E%3C/svg%3E%0A");
     background-position: center bottom;
@@ -159,10 +164,6 @@ section {
         height: 100%;
       }
     }
-
-    .container {
-      margin-top: 110px;
-    }
   }
 
   &.develop {
@@ -174,8 +175,11 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
+      transform: scale(0.9);
+      transform-origin: top left;
 
       img {
+        margin-top: 4rem;
         z-index: 2;
       }
     }
@@ -259,19 +263,19 @@ section {
 
     span {
       font-weight: 900;
-      font-size: 50px;
-      line-height: 61px;
-      margin-right: 30px;
+      font-size: 5rem;
+      line-height: 6.1rem;
+      margin-right: 3rem;
     }
 
     svg {
-      margin-right: 30px;
+      margin-right: 3rem;
     }
 
     .bottom-image {
       position: absolute;
-      left: 152px;
-      bottom: 87px;
+      left: 15rem;
+      bottom: 8.7rem;
     }
 
     .picture {
@@ -301,9 +305,9 @@ section {
   &.margin {
 
     h3 {
-      font-size: 75px;
-      line-height: 92px;
-      max-width: 885px;
+      font-size: 7.5rem;
+      line-height: 9.2rem;
+      max-width: 88.5rem;
       margin-bottom: 0;
     }
 
@@ -314,42 +318,41 @@ section {
       background-position: 0px -130px;
       top: 0;
       right: 4vw;
-      width: 830px;
+      width: 83rem;
     }
   }
 
   &.gallery {
-    padding-left: 152px;
 
     .fp-tableCell > .container {
       height: 85vh;
-      margin-right: 122px;
-      padding-right: 30px !important;
+      margin-right: 12rem;
+      padding-right: 3rem !important;
       margin-top: 15vh;
       overflow: auto;
     }
 
     h4 {
       font-weight: bold;
-      font-size: 40px;
-      margin: 30px 0;
+      font-size: 4rem;
+      margin: 3rem 0;
     }
   }
 
   &.form-small {
-    padding: 120px 152px 50px;
+    padding: 12rem 15rem 5rem;
 
     h4 {
       font-weight: 900;
-      font-size: 50px;
-      line-height: 61px;
-      margin-bottom: 40px;
+      font-size: 5rem;
+      line-height: 6.1rem;
+      margin-bottom: 4rem;
     }
 
     p {
       font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
     }
   }
 
@@ -365,7 +368,7 @@ section {
 
       .col {
         &:first-child {
-          padding-bottom: 80px;
+          padding-bottom: 8rem;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -386,13 +389,13 @@ section {
     }
 
     h2 {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
 
     .rocket {
       position: absolute;
       top: 74vh;
-      left: 62px;
+      left: 6.2rem;
 
       &:hover {
         svg {
@@ -412,7 +415,7 @@ section {
       height: 100%;
       background: url(./../images/banner.jpg) no-repeat center;
       background-size: cover;
-      padding: 80px 70px 70px 80px;
+      padding: 8rem 7rem 7rem 8rem;
 
       &::before {
         content: '';
@@ -430,27 +433,29 @@ section {
         position: relative;
         z-index: 2;
         background: $light;
-        padding: 110px 55px 80px;
+        padding: 11rem 5.5rem 8rem;
 
         h4 {
           font-weight: 900;
-          font-size: 52px;
-          line-height: 64px;
+          font-size: 5.2rem;
+          line-height: 6.4rem;
           text-align: center;
           color: $dark;
-          margin-bottom: 90px;
+          margin-bottom: 9rem;
         }
+
         p {
           font-weight: normal;
-          font-size: 18px;
-          line-height: 22px;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
           text-align: center;
 
           color: $dark;
         }
+
         .copy {
           position: absolute;
-          bottom: 40px;
+          bottom: 4rem;
           left: 0;
           right: 0;
         }
@@ -472,12 +477,12 @@ section {
 }
 
 #fp-nav.left {
-  left: 53px;
+  left: 5.3rem;
 
   ul {
     li {
-      width: 46px;
-      height: 46px;
+      width: 4.6rem;
+      height: 4.6rem;
 
       a {
         display: flex;
@@ -493,8 +498,8 @@ section {
 
         span {
           display: block;
-          width: 32px;
-          height: 32px;
+          width: 3.2rem;
+          height: 3.2rem;
           margin: 0;
           position: static;
           background: $target;
@@ -505,8 +510,8 @@ section {
           transform: scale(1);
 
           span {
-            width: 32px;
-            height: 32px;
+            width: 3.2rem;
+            height: 3.2rem;
             margin: 0;
           }
         }
@@ -520,8 +525,8 @@ section {
       &:hover {
         a, a.active {
           span {
-            width: 32px;
-            height: 32px;
+            width: 3.2rem;
+            height: 3.2rem;
             margin: 0;
           }
         }
@@ -554,9 +559,9 @@ section {
       font-family: Formular, sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      padding: 26px 35px;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      padding: 2.6rem 3.5rem;
       box-shadow: none;
     }
   }
@@ -564,7 +569,8 @@ section {
   &--vertical {
     label {
       display: block;
-      margin-bottom: 46px;
+      margin-bottom: 4.6rem;
+
       input {
         background: $light;
         color: $dark;
@@ -574,6 +580,7 @@ section {
           color: $dark;
         }
       }
+
       .submit {
         background: $dark;
         color: $light;
@@ -583,13 +590,13 @@ section {
 
   &--horizontal {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 
     label {
       flex-grow: 2;
 
       &:nth-child(2) {
-        margin: 0 25px;
+        margin: 0 2.5rem;
       }
 
       .submit {
@@ -616,9 +623,9 @@ section {
 
 .button {
   display: inline-block;
-  font-size: 24px;
-  line-height: 82px;
-  min-width: 304px;
+  font-size: 2.4rem;
+  line-height: 8.2rem;
+  min-width: 30.4rem;
   text-decoration: none;
   text-align: center;
   transition: .4s all;
@@ -646,8 +653,8 @@ section {
   list-style: none;
 
   li {
-    padding-left: 75px;
-    margin-bottom: 55px;
+    padding-left: 7.5rem;
+    margin-bottom: 5.5rem;
     position: relative;
 
     &::before {
@@ -655,8 +662,8 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      width: 53px;
-      height: 47px;
+      width: 5.3rem;
+      height: 4.7rem;
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -680,30 +687,30 @@ section {
 
   &-item__heading {
     font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 
     &.heading-only {
       font-weight: bold;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: 3rem;
+      line-height: 3.7rem;
       max-width: 600px;
     }
   }
 
   &-item__description {
     font-weight: normal;
-    font-size: 24px;
-    max-width: 530px;
+    font-size: 2.4rem;
+    max-width: 53rem;
     letter-spacing: 0.7px;
   }
 }
 
 .gallery-item {
   position: relative;
-  height: 240px;
+  height: 24rem;
   width: 25%;
-  padding: 40px 30px;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -737,32 +744,40 @@ section {
 
   &__heading {
     font-weight: 900;
-    font-size: 35px;
-    line-height: 43px;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
   }
 
   &__description {
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 }
 
 .contact-links {
-  margin-top: 150px;
+  margin-top: 15rem;
 
   ul {
 
   }
 
   li {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   a {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     color: $target;
     text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  html {
+    font-size: 8px;
   }
 }
