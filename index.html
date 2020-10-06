@@ -710,7 +710,7 @@
 		</div>
 	</section>
 
-	<section class="section form-small" data-anchor="form-small">
+	<section class="section form-small fp-auto-height" data-anchor="form-small">
 		<div class="container">
 			<h4>
 				Получить полное портфолио работ
@@ -732,23 +732,31 @@
 	</section>
 
 	<section class="section form-footer" data-anchor="form-footer">
+		<a href="#" class="rocket">
+			<svg width="42" height="76" viewBox="0 0 42 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M20.3116 0.783943C12.7566 8.07272 8.17204 20.4166 8.83264 31.7925C3.80923 37.0092 0.922867 44.0936 0.922867 51.4347C0.919699 51.8593 1.15891 52.2506 1.53753 52.4422C1.91931 52.6339 2.37397 52.5943 2.71457 52.3393L9.69443 47.1083L9.78473 48.7068C9.818 49.3008 10.3091 49.7634 10.9047 49.7634L31.2677 49.7634C31.575 49.7634 31.8554 49.6382 32.0598 49.4339C32.2483 49.2454 32.3703 48.9903 32.3861 48.7052L32.4764 47.1067L39.4563 52.3377C39.7969 52.5927 40.25 52.5769 40.6286 52.3884C40.7252 52.3393 40.8123 52.2743 40.89 52.1967C41.1149 51.9717 41.2464 51.6438 41.248 51.3286C41.248 44.0889 38.3616 37.0045 33.3382 31.7878C33.9941 20.3944 29.4443 8.02203 21.8593 0.782359C21.4268 0.372058 20.7456 0.372059 20.3116 0.783943ZM26.6863 21.7584C26.6863 23.3014 26.0589 24.7018 25.0435 25.7172C24.028 26.7327 22.6276 27.36 21.0846 27.36C17.9971 27.3584 15.4846 24.8459 15.483 21.7584C15.483 18.6693 17.9955 16.1568 21.0846 16.1568C24.1738 16.1568 26.6879 18.6708 26.6863 21.7584Z"
+				      fill="#4A38FF"/>
+				<path d="M14.1605 60.4849C14.1605 63.875 19.4913 73.86 20.098 74.9864C20.2929 75.3492 20.6731 75.5741 21.0834 75.5757C21.3875 75.5757 21.6695 75.4553 21.877 75.2478C21.9531 75.1717 22.018 75.0846 22.0719 74.9864C22.6786 73.86 28.0094 63.875 28.0094 60.4849C28.0094 56.667 24.9028 53.5604 21.085 53.5604C17.2655 53.562 14.1621 56.6686 14.1605 60.4849Z"
+				      fill="#4A38FF"/>
+			</svg>
+		</a>
 		<div class="container">
-			<h4>
-				Получить полное портфолио работ
-			</h4>
+			<div class="col">
+				<h2>
+					<span class="bordered">Остались</span> <br>
+					вопросы?
+				</h2>
+				<p class="subheading"><b>Расскажите о проекте - мы проконсультируем вас</b></p>
+				<div class="contact-links">
+					<ul>
+						<li><a href="tel:+79178518918">+7 (917) 851-89-18</a></li>
+						<li><a href="mailto:kh@imcompany.pro">kh@imcompany.pro</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
 
-			<form action="#" class="form form--horizontal">
-				<label>
-					<input type="text" class="form__input" placeholder="Имя">
-				</label>
-				<label>
-					<input type="tel" class="form__input" placeholder="Номер телефона">
-				</label>
-				<label>
-					<input type="submit" class="form__input submit button--target" value="Получить">
-				</label>
-			</form>
-			<p>Отправляя заявку вы соглашаетесь с политикой обработки персональных данных.</p>
+			</div>
 		</div>
 	</section>
 </main>
@@ -763,7 +771,10 @@
 <script src="dist/main.js"></script>
 <script>
   $(window).on('load', function () {
-    $('#fullpage').fullpage({});
+    $('#fullpage').fullpage({
+      navigation: true,
+      navigationPosition: 'left',
+    });
   });
 </script>
 </body>
