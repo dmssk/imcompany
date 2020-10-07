@@ -569,8 +569,7 @@
 				<span class="target-color">I’m</span> нейм
 			</h4>
 			<div class="horizontal">
-				<div class="gallery-item">
-					<img src="./src/images/gallery/1.jpg" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/1.jpg);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Финжир
@@ -580,8 +579,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/2.jpg" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/2.jpg);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Август-Астры
@@ -591,8 +589,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/3.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/3.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Бро Коля
@@ -602,8 +599,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/4.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/4.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Индюжина
@@ -618,8 +614,7 @@
 				<span class="target-color">I’m</span> логотип
 			</h4>
 			<div class="horizontal">
-				<div class="gallery-item">
-					<img src="./src/images/gallery/5.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/5.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Энергобанк
@@ -629,16 +624,14 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/6.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/6.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Министерство молодежи РТ
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/7.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/7.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								КАН авто
@@ -648,8 +641,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/8.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/8.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Индюжина
@@ -664,8 +656,7 @@
 				<span class="target-color">I’m</span> фирменный носитель
 			</h4>
 			<div class="horizontal">
-				<div class="gallery-item">
-					<img src="./src/images/gallery/9.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/9.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Интеграл
@@ -675,8 +666,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/10.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/10.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								TRIS
@@ -686,8 +676,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/11.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/11.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								ЗМТ
@@ -697,8 +686,7 @@
 							</span>
 					</div>
 				</div>
-				<div class="gallery-item">
-					<img src="./src/images/gallery/12.png" alt="">
+				<div class="gallery-item" style="background-image: url(./src/images/gallery/12.png);">
 					<div class="gallery-item__text">
 							<span class="gallery-item__heading">
 								Tell man
@@ -798,6 +786,33 @@
       navigation: true,
       navigationPosition: 'left',
       responsiveWidth: 1280,
+      onLeave: function (index, nextIndex) {
+        if (nextIndex === 2) {
+          $('section.develop').addClass('animate');
+        }
+        if (nextIndex === 3) {
+          $('section.extra').addClass('animate');
+        }
+        if (nextIndex === 4) {
+          $('section.history').addClass('animate');
+        }
+        if (nextIndex === 5) {
+          $('section.margin').addClass('animate');
+        }
+        if (nextIndex === 6) {
+          $('section.gallery').addClass('animate');
+        }
+        if (nextIndex === 7) {
+          $('section.form-small').addClass('animate');
+        }
+        if (nextIndex === 8) {
+          $('section.form-footer').addClass('animate');
+        }
+
+      },
+      afterLoad: function () {
+        $('section.hero').addClass('animate');
+      }
     });
   });
 </script>
