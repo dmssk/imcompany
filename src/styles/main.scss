@@ -599,7 +599,7 @@ section {
 
     .rocket {
       position: absolute;
-      top: 74vh;
+      bottom: 8rem;
       left: 6.2rem;
 
       &:hover {
@@ -989,7 +989,7 @@ section {
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
 
   html {
     font-size: 8px;
@@ -1172,10 +1172,20 @@ section {
     &.hero {
       height: 100vh !important;
     }
+    &.extra {
+      .picture {
+        height: 90%;
+        z-index: -1;
+      }
+    }
 
     &.history {
       padding-bottom: 25rem;
       margin-bottom: 10rem;
+
+      .picture {
+        z-index: -1;
+      }
     }
 
     &.margin {
@@ -1185,6 +1195,7 @@ section {
       .picture {
         background-size: contain;
         background-position: center;
+        right: 0;
       }
     }
 

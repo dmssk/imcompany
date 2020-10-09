@@ -6,6 +6,13 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>ImCompany</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#333333">
+	<meta name="theme-color" content="#333333">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
 	      integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A=="
 	      crossorigin="anonymous"/>
@@ -43,7 +50,7 @@
 				<span class="bordered">Упакуем</span> <span class="underline">ваш бизнес</span>
 				за 72 часа и <span class="bordered">99 000 ₽</span>
 			</h1>
-			<a href="#" class="button button--target">Упаковать</a>
+			<a href="#form-footer" class="button button--target">Упаковать</a>
 		</div>
 		<div class="picture">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 1081" fill="none">
@@ -326,7 +333,7 @@
 						агентства Аксеновой Анастасией</p>
 				</li>
 			</ul>
-			<a href="#" class="button button--target">Получить</a>
+			<a href="#form-footer" class="button button--target">Получить</a>
 		</div>
 		<div class="picture">
 			<i class="svg">
@@ -786,6 +793,7 @@
       navigation: true,
       navigationPosition: 'left',
       responsiveWidth: 1280,
+      scrollingSpeed : 1000,
       onLeave: function (index, nextIndex) {
         if (nextIndex === 2) {
           $('section.develop').addClass('animate');
