@@ -13,7 +13,8 @@ if ($_POST && $is_request_from_same_domain) {
 
     $subject = 'Новый лид с express-branding.imcompany.pro';
     $message = 'Имя - ' . $_POST['name'] .
-        '<br>Телефон - ' . $_POST['phone'];
+        '<br>Телефон - ' . $_POST['phone'] .
+        '<br>Тип - ' . $_POST['type'];
 
 
     $headers = "MIME-Version: 1.0\r\n";
