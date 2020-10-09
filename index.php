@@ -713,12 +713,12 @@
 				Получить полное портфолио работ
 			</h4>
 
-			<form action="#" class="form form--horizontal">
+			<form class="form form--horizontal" id="portfolio" method="post" novalidate="novalidate">
 				<label>
-					<input type="text" class="form__input" placeholder="Имя">
+					<input type="text" class="form__input" name="name" placeholder="Имя">
 				</label>
 				<label>
-					<input type="tel" class="form__input" placeholder="Номер телефона">
+					<input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
 				</label>
 				<label>
 					<input type="submit" class="form__input submit button--target" value="Получить">
@@ -756,12 +756,12 @@
 
 					<div class="form-wrap">
 						<h4>Оставить заявку</h4>
-						<form class="form form--vertical" action="#">
+						<form class="form form--vertical" id="lead" method="post" novalidate="novalidate">
 							<label>
-								<input type="text" class="form__input" placeholder="Имя">
+								<input type="text" class="form__input" name="name" placeholder="Имя">
 							</label>
 							<label>
-								<input type="tel" class="form__input" placeholder="Номер телефона">
+								<input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
 							</label>
 							<label>
 								<input type="submit" class="form__input submit" value="Отправить">

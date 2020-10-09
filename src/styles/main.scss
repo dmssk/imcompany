@@ -783,6 +783,14 @@ section {
       line-height: 2.9rem;
       padding: 2.6rem 3.5rem;
       box-shadow: none;
+
+      &.invalid {
+        border-color: red;
+
+      }
+    }
+    .error-message {
+      color: red !important;
     }
   }
 

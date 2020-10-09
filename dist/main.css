@@ -5624,6 +5624,11 @@ section {
   line-height: 2.9rem;
   padding: 2.6rem 3.5rem;
   box-shadow: none; }
+  .form label input.invalid {
+    border-color: red; }
+
+.form label .error-message {
+  color: red !important; }
 
 .form--vertical label {
   display: block;
