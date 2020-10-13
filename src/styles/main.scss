@@ -365,9 +365,10 @@ section {
       justify-content: center;
       align-items: center;
 
+      opacity: 0;
+
       img {
         z-index: 2;
-        opacity: 0;
       }
     }
 
@@ -421,9 +422,7 @@ section {
       }
 
       .picture {
-        img {
-          animation: fadeInRight 1.2s ease-in-out 400ms forwards;
-        }
+        animation: fadeInRight 1.2s ease-in-out 400ms forwards;
       }
     }
   }
@@ -783,6 +782,7 @@ section {
       line-height: 2.9rem;
       padding: 2.6rem 3.5rem;
       box-shadow: none;
+      -webkit-appearance: none;
 
       &.invalid {
         border-color: red;

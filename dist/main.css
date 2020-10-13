@@ -5326,10 +5326,10 @@ section {
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    opacity: 0; }
     section.extra .picture img {
-      z-index: 2;
-      opacity: 0; }
+      z-index: 2; }
   section.extra .svg {
     position: absolute;
     top: 0;
@@ -5363,7 +5363,7 @@ section {
     stroke-dashoffset: 6836;
     -webkit-animation: dash 3s linear 400ms forwards;
             animation: dash 3s linear 400ms forwards; }
-  section.extra.animate .picture img {
+  section.extra.animate .picture {
     -webkit-animation: fadeInRight 1.2s ease-in-out 400ms forwards;
             animation: fadeInRight 1.2s ease-in-out 400ms forwards; }
 
@@ -5623,7 +5623,8 @@ section {
   font-size: 2.4rem;
   line-height: 2.9rem;
   padding: 2.6rem 3.5rem;
-  box-shadow: none; }
+  box-shadow: none;
+  -webkit-appearance: none; }
   .form label input.invalid {
     border-color: red; }
 
